@@ -1,0 +1,35 @@
+\section{Preliminaries}
+
+Introduction of
+(1)  a Multi-valued set.
+(2) Multi-valued LTL  and  Lattice Automata ~\cite{Kupferman97}
+
+This section gives a brief introduction to lattice theory and lattice-valued set theory. For the details, the reader may refer to ~\cite{}. We write  $\texttt{N}$ for the set of natureal numbers, $\emph{I}$ for the index set, and $\mu$ and $\nu$ for the least and greatest fixpoint operators, respectively. 
+
+A lattice is a 4-tuple $\textit{L}=(L, \leq, \wedge,\vee)$, where $\leq$ is a partial ordering on $L$; and for any $x. y\in L$, $x\wedge y$ and $x\vee y$ stand for the infimum (also called the greatest lower bound) and the supremun (also called the least upper bound) of $x$ and $y$, respectively. A lattice $\textit{L}$ is finite if $L$ is finite. A lattice $L$ is distributive if for all $x, y,z\in L $, we have $x \vee (y\wedge z)=(x\vee y)\wedge(x \vee z)$ and $x\wedge (y\vee z)=(x\wedge y)\vee (x\wedge z)$. The supremum (resp. the infimum) of $A\subseteq L$ is denoted (if it exists in $L$) by $\bigvee A$ (resp. $\bigwedge A$). If $A=\{x_i :i\in I\}$, then we also use the notation $\bigvee\limits_{i\in I} x_i$ (resp. $\bigwedge\limits_{i\in I} x_i$). 
+
+For a distributive lattice $\mathfrak{L}$, an element $x\in L$ is called joint-irreducible if for any $y, z\in L$, $ x=y\vee z$ implies that either $x=y$ or $x=z$. In a distibutive lattice, if $x$ is join-irreducible and $x\leq y\vee z$, then it always holds that $x\leq y$ or $x\leq z$. Let $\mathfrak{JI}$ denote the set of all join-irreducible elements of $L$. Then for any finite distributive lattice $\mathfrak{L}$ and $x\in L$, $x= \bigvee\{y\in \mathfrak{JI(L)| y\leq x}\}$. Unless otherwise explicitly stated, $\mathfrak{L}$ in this paper will be assumed to be a finite distributive lattice with the least element 0 and the largest element 1 such that $0\neq 1$. 
+
+
+(3)  MV-CTL
+MV-CTL is a multi-valued extension of the temporal logic CTL. MV-CTL is used to express the properties of NMKSs. That is, the specifications for NMKS models can be written in MV-CTL. For simplicity, we will  use the same symbol for a binary logic connective and its interpretation in a model. 
+\begin{definition}
+The syntax of MV-CTL over AP is as follows: \\
+\centerline{$\varphi ::=ff | p|\varphi\vee \varphi | \varphi\rightarrow \varphi| \exists \psi |\forall \psi$}
+\centerline{$\psi::=\mathfrak{X}\varphi |\varphi\mathfrak{U}\varphi | \mathfrak{G}\varphi$}
+
+where $p\in AP$. 
+
+\end{definition} 
+
+(4)  MV-$\mu$ calculus
+
+(6) push-down system
+
+\subsection { An example}
+
+An example~\cite{ppt : MC-with MV Logics Bruns}
+
+To show the problem we want solve:
+(1) quantitative reachability
+(2) MC based on MV-LTL/MV-CTL/MV-$\mu$ calculus
